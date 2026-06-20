@@ -6,7 +6,6 @@ import { useApp } from '../../context/AppContext'
 
 export default function FlashCard({ word, onResult }) {
   const [isFlipped, setIsFlipped] = useState(false)
-  const [showReading, setShowReading] = useState(false)
   const { state } = useApp()
   const autoPlay = state.settings.autoPlayAudio
 
@@ -20,23 +19,17 @@ export default function FlashCard({ word, onResult }) {
   const handleKnow = useCallback(() => {
     onResult(word.id, 'know')
     setIsFlipped(false)
-    setShowReading(false)
   }, [word.id, onResult])
 
   const handleReview = useCallback(() => {
     onResult(word.id, 'review')
     setIsFlipped(false)
-    setShowReading(false)
   }, [word.id, onResult])
 
-  const handleHint = useCallback(() => {
-    setShowReading(true)
-  }, [])
-
   const swipeHandlers = useSwipe(
-    handleReview,  // left = need review
-    handleKnow,    // right = got it
-    handleHint,    // down = hint
+    handleReview,
+    handleKnow,
+    null, // no down action
     70
   )
 
@@ -71,16 +64,7 @@ export default function FlashCard({ word, onResult }) {
               🔊
             </button>
             <p className="text-4xl font-bold text-slate-800 mb-6 text-center">{word.word}</p>
-            {showReading && (
-              <motion.p
-                initial={{ opacity: 0, y: -5 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-lg text-slate-400 mb-2"
-              >
-                {word.reading}
-              </motion.p>
-            )}
-            {!isFlipped && !showReading && (
+            {!isFlipped && (
               <p className="text-xs text-slate-300 mt-2">点击翻转查看含义 ↘</p>
             )}
             {word.partOfSpeech && (
@@ -124,15 +108,7 @@ export default function FlashCard({ word, onResult }) {
         >
           🔄
         </button>
-        <button
-          onClick={handleHint}
-          className="w-12 h-12 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center text-xl
-            hover:bg-amber-100 active:scale-90 transition-all shadow-sm"
-          title="提示读音"
-        >
-          💡
-        </button>
-        <button
+<button
           onClick={handleKnow}
           className="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center text-2xl
             hover:bg-emerald-100 active:scale-90 transition-all shadow-sm"
@@ -142,7 +118,7 @@ export default function FlashCard({ word, onResult }) {
         </button>
       </div>
       <p className="text-xs text-slate-300 text-center mt-3">
-        ← 需复习 | 💡 提示读音 | ✅ 已掌握 →
+        ← 需复习 | ✅ 已掌握 →
       </p>
     </div>
   )
