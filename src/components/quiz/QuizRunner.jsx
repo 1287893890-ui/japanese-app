@@ -286,18 +286,19 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     )
                   })()}
 
-                  {currentIndex >= questions.length - 1 && !allAnswered && (
+                  {currentIndex >= questions.length - 1 && !allAnswered ? (
                     <p className="text-center text-sm text-amber-600 font-medium px-2">
                       ⚠️ 前面还有未答的题目，点击右上角 <span className="font-bold bg-amber-100 px-1.5 py-0.5 rounded">☰</span> 跳转作答
                     </p>
+                  ) : (
+                    <button
+                      onClick={handleNext}
+                      className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
+                        ${(allAnswered && currentIndex >= questions.length - 1) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                    >
+                      {(allAnswered && currentIndex >= questions.length - 1) ? '📊 查看结果' : '下一题 →'}
+                    </button>
                   )}
-                  <button
-                    onClick={handleNext}
-                    className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                      ${(allAnswered && (currentIndex >= questions.length - 1)) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
-                  >
-                    {(allAnswered && (currentIndex >= questions.length - 1)) ? '📊 查看结果' : '下一题 →'}
-                  </button>
                 </motion.div>
               )}
             </>
@@ -353,18 +354,19 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     </div>
                   )}
 
-                  {currentIndex >= questions.length - 1 && !allAnswered && (
+                  {currentIndex >= questions.length - 1 && !allAnswered ? (
                     <p className="text-center text-sm text-amber-600 font-medium px-2">
                       ⚠️ 前面还有未答的题目，点击右上角 <span className="font-bold bg-amber-100 px-1.5 py-0.5 rounded">☰</span> 跳转作答
                     </p>
+                  ) : (
+                    <button
+                      onClick={handleNext}
+                      className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
+                        ${(allAnswered && currentIndex >= questions.length - 1) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                    >
+                      {(allAnswered && currentIndex >= questions.length - 1) ? '📊 查看结果' : '下一题 →'}
+                    </button>
                   )}
-                  <button
-                    onClick={handleNext}
-                    className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                      ${(allAnswered && (currentIndex >= questions.length - 1)) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
-                  >
-                    {(allAnswered && (currentIndex >= questions.length - 1)) ? '📊 查看结果' : '下一题 →'}
-                  </button>
                 </motion.div>
               )}
             </>
