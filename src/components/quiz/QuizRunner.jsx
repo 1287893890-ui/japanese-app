@@ -138,17 +138,6 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
 
   const allAnswered = questions.every(q => isQuestionAnswered(q))
 
-  /** 找到下一个未答题目（从 fromIndex+1 往后找，找不到再从开头循环找） */
-  const findNextUnanswered = useCallback((fromIndex) => {
-    for (let i = fromIndex + 1; i < questions.length; i++) {
-      if (!isQuestionAnswered(questions[i])) return i
-    }
-    for (let i = 0; i < fromIndex; i++) {
-      if (!isQuestionAnswered(questions[i])) return i
-    }
-    return -1
-  }, [questions, isQuestionAnswered])
-
   const handleAnswer = useCallback((selected, isCorrect) => {
     const timeTaken = Math.round((Date.now() - startTime) / 1000)
     const answer = { questionId: question.id, selected, isCorrect, timeTaken }
@@ -193,15 +182,24 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
   }, [questions, answers])
 
   const handleNext = useCallback(() => {
-    setLastAnswer(null)
-    if (allAnswered) {
+    if (currentIndex >= questions.length - 1 && allAnswered) {
       const totalTime = Math.round((Date.now() - startTime) / 1000)
       onFinish?.({ answers: [...answers], totalTime })
     } else {
-      const next = findNextUnanswered(currentIndex)
-      if (next >= 0) jumpToQuestion(next)
+      // Always go to next in order; loop back to 0 if at the end
+      const nextIndex = currentIndex + 1 >= questions.length ? 0 : currentIndex + 1
+      const target = questions[nextIndex]
+      setCurrentIndex(nextIndex)
+      if (target?.type === 'reading-group') {
+        const subIds = target.subQuestions.map(sq => sq.id)
+        const prev = answers.filter(a => subIds.includes(a.questionId))
+        setLastAnswer(prev.length > 0 ? { isGroup: true, subAnswers: prev, question: target } : null)
+      } else {
+        const prev = answers.find(a => a.questionId === target?.id)
+        setLastAnswer(prev ? { ...prev, question: target } : null)
+      }
     }
-  }, [allAnswered, answers, startTime, onFinish, currentIndex, findNextUnanswered, jumpToQuestion])
+  }, [allAnswered, answers, startTime, onFinish, currentIndex, questions])
 
   if (!question) {
     return <div className="text-center py-12 text-slate-400 text-base">没有题目</div>
@@ -288,9 +286,9 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                   <button
                     onClick={handleNext}
                     className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                      ${allAnswered ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                      ${(allAnswered && (currentIndex >= questions.length - 1)) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
                   >
-                    {allAnswered ? '📊 查看结果' : '下一题 →'}
+                    {(allAnswered && (currentIndex >= questions.length - 1)) ? '📊 查看结果' : '下一题 →'}
                   </button>
                 </motion.div>
               )}
@@ -350,9 +348,9 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                   <button
                     onClick={handleNext}
                     className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                      ${allAnswered ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                      ${(allAnswered && (currentIndex >= questions.length - 1)) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
                   >
-                    {allAnswered ? '📊 查看结果' : '下一题 →'}
+                    {(allAnswered && (currentIndex >= questions.length - 1)) ? '📊 查看结果' : '下一题 →'}
                   </button>
                 </motion.div>
               )}
