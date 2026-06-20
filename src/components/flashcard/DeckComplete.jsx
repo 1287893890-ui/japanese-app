@@ -1,0 +1,48 @@
+import Button from '../shared/Button'
+
+export default function DeckComplete({ results, total, onRestart, onFinish }) {
+  const knowCount = results.filter(r => r.status === 'know').length
+  const reviewCount = results.filter(r => r.status === 'review').length
+  const pct = Math.round((knowCount / total) * 100)
+
+  const getMessage = () => {
+    if (pct >= 90) return { emoji: '🎉', text: '太厉害了！几乎全部掌握！' }
+    if (pct >= 70) return { emoji: '👍', text: '做得不错！继续加油！' }
+    if (pct >= 50) return { emoji: '💪', text: '不错！多复习会更好！' }
+    return { emoji: '📚', text: '继续努力！学习需要坚持！' }
+  }
+
+  const msg = getMessage()
+
+  return (
+    <div className="text-center space-y-5 w-full">
+      <div className="text-6xl">{msg.emoji}</div>
+      <div>
+        <div className="text-4xl font-bold text-slate-800">{pct}%</div>
+        <p className="text-slate-500 text-sm mt-1">{msg.text}</p>
+      </div>
+
+      <div className="flex items-center justify-center gap-6 text-sm">
+        <div className="text-center">
+          <div className="text-2xl font-bold text-success">{knowCount}</div>
+          <div className="text-xs text-slate-400">已掌握 ✅</div>
+        </div>
+        <div className="text-center">
+          <div className="text-2xl font-bold text-warning">{reviewCount}</div>
+          <div className="text-xs text-slate-400">需复习 🔄</div>
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        <Button variant="primary" size="lg" className="w-full" onClick={onFinish}>
+          🎯 完成学习
+        </Button>
+        {reviewCount > 0 && (
+          <Button variant="secondary" size="lg" className="w-full" onClick={onRestart}>
+            🔄 复习薄弱词（{reviewCount}个）
+          </Button>
+        )}
+      </div>
+    </div>
+  )
+}

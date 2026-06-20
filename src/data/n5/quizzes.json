@@ -1,0 +1,1868 @@
+{
+  "level": "N5",
+  "levelName": "N5",
+  "levelNameCn": "入门",
+  "emoji": "🌱",
+  "quizzes": [
+    {
+      "id": "n5-q-001",
+      "type": "multiple-choice",
+      "topic": "reading",
+      "question": "「食べる」的正确读音是哪一个？",
+      "emoji": "🔊",
+      "options": [
+        {
+          "id": "a",
+          "text": "たべる",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "のむ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ねる",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "おきる",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「食べる」的读音是「たべる」，意思是「吃」。B「のむ」是「喝」，C「ねる」是「睡觉」，D「おきる」是「起床」。",
+      "sourceRef": "n5-v-050"
+    },
+    {
+      "id": "n5-q-002",
+      "type": "multiple-choice",
+      "topic": "reading",
+      "question": "「今日」的读音是什么？",
+      "emoji": "🔊",
+      "options": [
+        {
+          "id": "a",
+          "text": "きょう",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "あした",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "きのう",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "あさ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「今日」读作「きょう」，意思是「今天」。「あした」是「明日」（明天），「きのう」是「昨日」（昨天）。",
+      "sourceRef": "n5-v-033"
+    },
+    {
+      "id": "n5-q-003",
+      "type": "multiple-choice",
+      "topic": "meaning",
+      "question": "「ありがとうございます」是什么意思？",
+      "emoji": "💬",
+      "options": [
+        {
+          "id": "a",
+          "text": "谢谢（礼貌）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "对不起",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "早上好",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "再见",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「ありがとうございます」是表示感谢的礼貌用语。",
+      "sourceRef": "n5-v-005"
+    },
+    {
+      "id": "n5-q-004",
+      "type": "multiple-choice",
+      "topic": "meaning",
+      "question": "「先生」是什么意思？",
+      "emoji": "💬",
+      "options": [
+        {
+          "id": "a",
+          "text": "老师",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "学生",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "医生",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "律师",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「先生（せんせい）」指「老师」，也可用于称呼医生、律师等专业人士，但最基础的意思是「老师」。",
+      "sourceRef": "n5-v-077"
+    },
+    {
+      "id": "n5-q-005",
+      "type": "multiple-choice",
+      "topic": "meaning",
+      "question": "「大きい」的反义词是什么？",
+      "emoji": "📏",
+      "options": [
+        {
+          "id": "a",
+          "text": "小さい",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "高い",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "長い",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "新しい",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「大きい」是「大的」，「小さい（ちいさい）」是「小的」。「高い」是「高的」，「長い」是「长的」，「新しい」是「新的」。",
+      "sourceRef": "n5-v-130"
+    },
+    {
+      "id": "n5-q-006",
+      "type": "multiple-choice",
+      "topic": "particle",
+      "question": "「私___学生です。」空白处应填入哪个助词？",
+      "emoji": "✍️",
+      "options": [
+        {
+          "id": "a",
+          "text": "は",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "が",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "を",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "に",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「は」是主题助词。B「が」是主语助词，C「を」是宾语助词，D「に」是场所/方向助词。注意读音为「わ」。",
+      "sourceRef": "n5-g-001"
+    },
+    {
+      "id": "n5-q-007",
+      "type": "multiple-choice",
+      "topic": "particle",
+      "question": "「水___飲みます。」空白处应填入哪个助词？",
+      "emoji": "✍️",
+      "options": [
+        {
+          "id": "a",
+          "text": "を",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "は",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "が",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "で",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「を」表示动作的直接对象。在「水を飲みます」中「水」是「飲む」的对象。",
+      "sourceRef": "n5-g-005"
+    },
+    {
+      "id": "n5-q-008",
+      "type": "multiple-choice",
+      "topic": "particle",
+      "question": "「学校___行きます。」空白处应填入哪个助词？",
+      "emoji": "✍️",
+      "options": [
+        {
+          "id": "a",
+          "text": "に",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "を",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "で",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "が",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「に」表示移动方向/目的地。B「を」是宾语，C「で」是动作场所，D「が」是主语。",
+      "sourceRef": "n5-g-006"
+    },
+    {
+      "id": "n5-q-009",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「～てください」的正确用法是什么？",
+      "emoji": "📝",
+      "options": [
+        {
+          "id": "a",
+          "text": "用于请求对方做某事",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "用于邀请对方一起做",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "用于表达自己的能力",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "用于表达过去的动作",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～てください」用于礼貌地请求对方做某事。邀请应该用「～ませんか」。",
+      "sourceRef": "n5-g-008"
+    },
+    {
+      "id": "n5-q-010",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「ここに名前を書いてください」的意思是？",
+      "emoji": "📝",
+      "options": [
+        {
+          "id": "a",
+          "text": "请在这里写上名字",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "请不要写名字",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "我写了名字",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "可以写名字吗",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「書いてください」是「書く」的て形+「ください」表「请写」。",
+      "sourceRef": "n5-g-008"
+    },
+    {
+      "id": "n5-q-011",
+      "type": "multiple-choice",
+      "topic": "conjugation",
+      "question": "动词「食べる」的ます形是什么？",
+      "emoji": "🔄",
+      "options": [
+        {
+          "id": "a",
+          "text": "食べます",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "食べります",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "食べまする",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "食べでした",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「食べる」是二类动词，去掉词尾「る」加「ます」→「食べます」。",
+      "sourceRef": "n5-v-050"
+    },
+    {
+      "id": "n5-q-012",
+      "type": "multiple-choice",
+      "topic": "conjugation",
+      "question": "「飲む」的て形是什么？",
+      "emoji": "🔄",
+      "options": [
+        {
+          "id": "a",
+          "text": "飲んで",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "飲みて",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "飲って",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "飲んでいます",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「飲む」是一类动词，词尾「む」变成「んで」→「飲んで」。",
+      "sourceRef": "n5-v-051"
+    },
+    {
+      "id": "n5-q-013",
+      "type": "multiple-choice",
+      "topic": "conjugation",
+      "question": "「する」的て形是什么？",
+      "emoji": "🔄",
+      "options": [
+        {
+          "id": "a",
+          "text": "して",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "すて",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "するて",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "した",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「する」是三类动词（不规则），て形是「して」。D「した」是た形（过去式）。",
+      "sourceRef": "n5-v-112"
+    },
+    {
+      "id": "n5-q-014",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「机の上に本があります」是什么意思？",
+      "emoji": "📖",
+      "options": [
+        {
+          "id": "a",
+          "text": "桌子上有书",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "书在桌子上",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "桌子下面有书",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "书不在桌子上",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～に～があります」表示存在。「本は机の上にあります」才是「书在桌子上」。",
+      "sourceRef": "n5-g-012"
+    },
+    {
+      "id": "n5-q-015",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "邀请朋友一起看电影时，应该怎么说？",
+      "emoji": "🎬",
+      "options": [
+        {
+          "id": "a",
+          "text": "映画を見ませんか",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "映画を見てください",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "映画を見ます",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "映画を見ました",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～ませんか」用于邀请。「～てください」像是在命令对方。",
+      "sourceRef": "n5-g-013"
+    },
+    {
+      "id": "n5-q-016",
+      "type": "multiple-choice",
+      "topic": "listening",
+      "question": "「こんにちは」通常在什么时候使用？",
+      "emoji": "🎧",
+      "options": [
+        {
+          "id": "a",
+          "text": "白天（一般问候）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "早晨",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "晚上",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "深夜",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「こんにちは」是白天的问候语。早晨用「おはようございます」，晚上用「こんばんは」。",
+      "sourceRef": "n5-v-002"
+    },
+    {
+      "id": "n5-q-017",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「病院」的读音是？",
+      "emoji": "🏥",
+      "options": [
+        {
+          "id": "a",
+          "text": "びょういん",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "びょうき",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "びよいん",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ぴょういん",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「病院」读作「びょういん」。B「びょうき」是「病気」（疾病）。",
+      "sourceRef": "n5-v-092"
+    },
+    {
+      "id": "n5-q-018",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「美味しい」的意思是什么？",
+      "emoji": "😋",
+      "options": [
+        {
+          "id": "a",
+          "text": "好吃",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "便宜的",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "新的",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "开心的",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「美味しい（おいしい）」是表示「好吃、美味」的イ形容词。",
+      "sourceRef": "n5-v-059"
+    },
+    {
+      "id": "n5-q-019",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「～から」表示什么？",
+      "emoji": "💡",
+      "options": [
+        {
+          "id": "a",
+          "text": "原因/理由",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "目的地",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "手段",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "所属",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「から」表示原因或理由。如「寒いから窓を閉めてください」=因为冷请关窗。",
+      "sourceRef": "n5-g-015"
+    },
+    {
+      "id": "n5-q-020",
+      "type": "multiple-choice",
+      "topic": "particle",
+      "question": "「バス___学校に行きます。」空白处应填入哪个助词？",
+      "emoji": "✍️",
+      "options": [
+        {
+          "id": "a",
+          "text": "で",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "に",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "を",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "は",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「で」表示手段/工具。在「バスで学校に行きます」中表示乘坐的交通工具。",
+      "sourceRef": "n5-g-007"
+    },
+    {
+      "id": "n5-q-021",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「ここで写真を撮らないでください」是什么意思？",
+      "emoji": "📸",
+      "options": [
+        {
+          "id": "a",
+          "text": "请不要在这里拍照",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "请在这里拍照",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "可以在这里拍照",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "必须在这里拍照",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～ないでください」表示「请不要～」。「撮らない」是「撮る」的ない形。",
+      "sourceRef": "n5-g-016"
+    },
+    {
+      "id": "n5-q-022",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「日本に行ったことがあります」的意思是？",
+      "emoji": "🇯🇵",
+      "options": [
+        {
+          "id": "a",
+          "text": "去过日本",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "想去日本",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "正在去日本",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "不去日本",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～たことがある」表示曾经有过某种经验。否定是「～たことがない」。",
+      "sourceRef": "n5-g-019"
+    },
+    {
+      "id": "n5-q-023",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「明日は来なくてもいいです」的意思是？",
+      "emoji": "✅",
+      "options": [
+        {
+          "id": "a",
+          "text": "明天不来也可以",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "明天必须来",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "明天请不要来",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "明天会来",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～なくてもいい」表示「不～也可以」，表示没有该义务或必要。",
+      "sourceRef": "n5-g-018"
+    },
+    {
+      "id": "n5-q-024",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「春」的正确读音是？",
+      "emoji": "🌸",
+      "options": [
+        {
+          "id": "a",
+          "text": "はる",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "なつ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "あき",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ふゆ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「春」读「はる」（春天）。B「なつ」是「夏」，C「あき」是「秋」，D「ふゆ」是「冬」。",
+      "sourceRef": "n5-v-289"
+    },
+    {
+      "id": "n5-q-025",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「早く寝たほうがいいですよ」的意思是？",
+      "emoji": "😴",
+      "options": [
+        {
+          "id": "a",
+          "text": "最好早点睡",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "请不要早睡",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "可以早点睡",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "必须早点睡",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～たほうがいい」表示建议「最好～」。肯定形式用た形。",
+      "sourceRef": "n5-g-023"
+    },
+    {
+      "id": "n5-q-026",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「頭」的正确读音是？",
+      "emoji": "🤕",
+      "options": [
+        {
+          "id": "a",
+          "text": "あたま",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "かお",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "くび",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "はな",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「頭」读「あたま」（头）。B「かお」是「顔」（脸），C「くび」是「首」（脖子），D「はな」是「鼻」（鼻子）。",
+      "sourceRef": "n5-v-271"
+    },
+    {
+      "id": "n5-q-027",
+      "type": "multiple-choice",
+      "topic": "conjugation",
+      "question": "「待つ」的て形是什么？",
+      "emoji": "🔄",
+      "options": [
+        {
+          "id": "a",
+          "text": "待って",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "待ちて",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "待つて",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "待んで",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「待つ」是一类动词，词尾「つ」变成「って」→「待って」。",
+      "sourceRef": "n5-v-253"
+    },
+    {
+      "id": "n5-q-028",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「明日は雨が降るかもしれません」的意思是？",
+      "emoji": "🌧️",
+      "options": [
+        {
+          "id": "a",
+          "text": "明天也许会下雨",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "明天一定会下雨",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "明天不会下雨",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "明天下雨了",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～かもしれない」表示可能性，约50%的确信度。敬体形式是「かもしれません」。",
+      "sourceRef": "n5-g-024"
+    },
+    {
+      "id": "n5-q-029",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「暖かくなりました」的意思是？",
+      "emoji": "🌡️",
+      "options": [
+        {
+          "id": "a",
+          "text": "变暖和了",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "变冷了",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "一直很暖和",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "太热了",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～くなる」表示状态变化。イ形容词去「い」加「くなる」→「暖かい」→「暖かくなる」。",
+      "sourceRef": "n5-g-025"
+    },
+    {
+      "id": "n5-q-030",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「食べすぎました」的意思是？",
+      "emoji": "🍔",
+      "options": [
+        {
+          "id": "a",
+          "text": "吃太多了",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "没吃饱",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "很好吃",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "不想吃了",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～すぎる」表示程度超过适当范围。动词接ます形+すぎる→「食べすぎる」。",
+      "sourceRef": "n5-g-028"
+    },
+    {
+      "id": "n5-q-031",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「私___コーヒー___します。」填入正确助词和表达。",
+      "emoji": "☕",
+      "options": [
+        {
+          "id": "a",
+          "text": "は、に",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "が、を",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "を、に",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "に、は",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～にする」表示选择。「私はコーヒーにします」=我选咖啡。",
+      "sourceRef": "n5-g-026"
+    },
+    {
+      "id": "n5-q-032",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「傘」的正确读音是？",
+      "emoji": "☂️",
+      "options": [
+        {
+          "id": "a",
+          "text": "かさ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "かばん",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "かみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "かぜ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「傘」读「かさ」（伞）。B「かばん」是「鞄」（包），C「かみ」是「紙」（纸），D「かぜ」是「風」（风）。",
+      "sourceRef": "n5-v-356"
+    },
+    {
+      "id": "n5-q-033",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「今日は風が強いです」的意思是？",
+      "emoji": "💨",
+      "options": [
+        {
+          "id": "a",
+          "text": "今天风很大",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "今天很暖和",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "今天下雨了",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "今天天气很好",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「風」=风，「強い」=强的。整句意为「今天风很大」。",
+      "sourceRef": "n5-v-283"
+    },
+    {
+      "id": "n5-q-034",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「音楽を聞きながら勉強します」的意思是？",
+      "emoji": "🎵",
+      "options": [
+        {
+          "id": "a",
+          "text": "一边听音乐一边学习",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "先听音乐再学习",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "听完音乐后学习",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "只学习不听音乐",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～ながら」表示同时进行两个动作。前项是伴随动作（次要），后项是主要动作。",
+      "sourceRef": "n5-g-033"
+    },
+    {
+      "id": "n5-q-035",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「昨日」的读音是什么？",
+      "emoji": "📅",
+      "options": [
+        {
+          "id": "a",
+          "text": "きのう",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "きょう",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "あした",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "あさって",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「昨日」读「きのう」（昨天）。B「きょう」=今天，C「あした」=明天，D「あさって」=后天。",
+      "sourceRef": "n5-v-035"
+    },
+    {
+      "id": "n5-q-036",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「もう宿題をしましたか」→「いいえ、___。」正确回答是？",
+      "emoji": "📚",
+      "options": [
+        {
+          "id": "a",
+          "text": "まだです",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "もうです",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "はい、まだです",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "そうです",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「もう～ましたか」问「已经～了吗」，否定回答用「まだです」或「まだ～ていません」。",
+      "sourceRef": "n5-g-034"
+    },
+    {
+      "id": "n5-q-037",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「来年、日本に留学する___です。」填入正确的表达。",
+      "emoji": "✈️",
+      "options": [
+        {
+          "id": "a",
+          "text": "つもり",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "こと",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ほう",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ところ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～つもり」表示说话人的意图/计划。前面接辞書形。",
+      "sourceRef": "n5-g-022"
+    },
+    {
+      "id": "n5-q-038",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「手を洗って___ご飯を食べます。」填入正确的表达。",
+      "emoji": "🧼",
+      "options": [
+        {
+          "id": "a",
+          "text": "から",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "まで",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "だけ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ほど",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～てから」表示两个动作的先后顺序，强调先做前项再做后项。",
+      "sourceRef": "n5-g-035"
+    },
+    {
+      "id": "n5-q-039",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「彼女」的正确读音是？",
+      "emoji": "👩",
+      "options": [
+        {
+          "id": "a",
+          "text": "かのじょ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "かれ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ともだち",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "かれし",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「彼女」读「かのじょ」（她/女朋友）。B「かれ」是「彼」（他），C「ともだち」是「友達」（朋友）。",
+      "sourceRef": "n5-v-073"
+    },
+    {
+      "id": "n5-q-040",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「日本語は中国語___難しくないです。」填入正确的表达。",
+      "emoji": "⚖️",
+      "options": [
+        {
+          "id": "a",
+          "text": "ほど",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "より",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "から",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "まで",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～ほど～ない」表示比较，「日语不如中文难」。「ほど」必须搭配否定。",
+      "sourceRef": "n5-g-031"
+    },
+    {
+      "id": "n5-q-041",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「～てもいいですか」的正确意思是？",
+      "emoji": "👌",
+      "options": [
+        {
+          "id": "a",
+          "text": "可以～吗？",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "不可以～",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "必须～",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "最好～",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～てもいい」表示许可。询问用「～てもいいですか」=可以～吗？",
+      "sourceRef": "n5-g-038"
+    },
+    {
+      "id": "n5-q-042",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「ここでタバコを吸ってはいけません」意思是？",
+      "emoji": "⛔",
+      "options": [
+        {
+          "id": "a",
+          "text": "不能在这里抽烟",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "可以在这里抽烟",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "最好在这里抽烟",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "请在这里抽烟",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～てはいけない」=不能/不可以。表示禁止。",
+      "sourceRef": "n5-g-037"
+    },
+    {
+      "id": "n5-q-043",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「部屋をきれいにしました」意思是？",
+      "emoji": "🧹",
+      "options": [
+        {
+          "id": "a",
+          "text": "把房间弄干净了",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "房间变干净了",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "房间是干净的",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "房间很脏",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～にする」是人为使状态变化。「きれい+にする」=弄干净。",
+      "sourceRef": "n5-g-044"
+    },
+    {
+      "id": "n5-q-044",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「新しい車が___。」填入正确表达。",
+      "emoji": "🚗",
+      "options": [
+        {
+          "id": "a",
+          "text": "ほしいです",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "したいです",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "たいです",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ください",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～がほしい」=想要某个名词。区别于「～たい」（想做动作）。",
+      "sourceRef": "n5-g-045"
+    },
+    {
+      "id": "n5-q-045",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「荷物を持ちましょうか」表达什么？",
+      "emoji": "🫴",
+      "options": [
+        {
+          "id": "a",
+          "text": "主动提议帮对方拿行李",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "邀请对方一起拿行李",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "命令对方拿行李",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "询问行李在哪",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～ましょうか」=要我帮你～吗？",
+      "sourceRef": "n5-g-046"
+    },
+    {
+      "id": "n5-q-046",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「これは日本語で何___いますか。」填入正确表达。",
+      "emoji": "🗣️",
+      "options": [
+        {
+          "id": "a",
+          "text": "と言",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "を言",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "が言",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "に言",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～と言う」=叫做～。固定搭配用「と」。",
+      "sourceRef": "n5-g-041"
+    },
+    {
+      "id": "n5-q-047",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「どうして遅れたんですか」中的「ん」表达什么？",
+      "emoji": "🔍",
+      "options": [
+        {
+          "id": "a",
+          "text": "要求解释说明",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "否定",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "过去时态",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "推测",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～んです」=～的，表示解释说明。常用于回答疑问。",
+      "sourceRef": "n5-g-049"
+    },
+    {
+      "id": "n5-q-048",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「クラスで彼が一番背が高い」意思是？",
+      "emoji": "📏",
+      "options": [
+        {
+          "id": "a",
+          "text": "班上他个子最高",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "他比班上同学矮",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "班上就他一个高个子",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "他在班上是中等身高",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～の中で～が一番～」=最～。最高级比较。",
+      "sourceRef": "n5-g-040"
+    },
+    {
+      "id": "n5-q-049",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「誕生日」的读音是？",
+      "emoji": "🎂",
+      "options": [
+        {
+          "id": "a",
+          "text": "たんじょうび",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "たんじょび",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "だんじょうび",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "たんじょうひ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「誕生日」读「たんじょうび」。注意長音。",
+      "sourceRef": "n5-v-690"
+    },
+    {
+      "id": "n5-q-050",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「お祭り」的意思是？",
+      "emoji": "🎪",
+      "options": [
+        {
+          "id": "a",
+          "text": "节庆/庙会",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "仪式",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "会议",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "展览",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「お祭り」=节庆、庙会。如「夏祭りに行く」。",
+      "sourceRef": "n5-v-692"
+    },
+    {
+      "id": "n5-q-051",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「引っ越す」的意思是？",
+      "emoji": "📦",
+      "options": [
+        {
+          "id": "a",
+          "text": "搬家",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "旅行",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "迟到",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "回来",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「引っ越す（ひっこす）」=搬家。",
+      "sourceRef": "n5-v-784"
+    },
+    {
+      "id": "n5-q-052",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「危ない」的反义词是？",
+      "emoji": "⚠️",
+      "options": [
+        {
+          "id": "a",
+          "text": "安全（あんぜん）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "便利（べんり）",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "丈夫（じょうぶ）",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "簡単（かんたん）",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「危ない」=危险的，反义词「安全」=安全的。",
+      "sourceRef": "n5-v-648"
+    },
+    {
+      "id": "n5-q-053",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「この部屋は広くて明るい」意思是？",
+      "emoji": "✨",
+      "options": [
+        {
+          "id": "a",
+          "text": "房间又宽敞又明亮",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "房间宽敞但暗",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "房间窄但明亮",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "房间不宽敞也不明亮",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「イ形+くて」=～而且～。并列形容词。",
+      "sourceRef": "n5-g-043"
+    },
+    {
+      "id": "n5-q-054",
+      "type": "multiple-choice",
+      "topic": "conjugation",
+      "question": "「重い」的否定形是？",
+      "emoji": "⚡",
+      "options": [
+        {
+          "id": "a",
+          "text": "重くない",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "重いじゃない",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "重くありません",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "重いではない",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "イ形否定：去い+くない。C也是否定形但为敬体。",
+      "sourceRef": "n5-g-014"
+    },
+    {
+      "id": "n5-q-055",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「お風呂」的读音是？",
+      "emoji": "🛁",
+      "options": [
+        {
+          "id": "a",
+          "text": "おふろ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "おふろい",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "おふうろ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "おぶろ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「お風呂」读「おふろ」。注意短音。",
+      "sourceRef": "n5-v-772"
+    },
+    {
+      "id": "n5-q-056",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「駅で友達に___。」填入正确表达（过去式）。",
+      "emoji": "🤝",
+      "options": [
+        {
+          "id": "a",
+          "text": "会いました",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "会います",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "会いません",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "会いましたか",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「友達に会う」=见朋友。过去式：会いました。",
+      "sourceRef": "n5-g-006"
+    },
+    {
+      "id": "n5-q-057",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「玄関」的意思是？",
+      "emoji": "🏠",
+      "options": [
+        {
+          "id": "a",
+          "text": "玄关/门口",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "厨房",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "卧室",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "客厅",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「玄関（げんかん）」=玄关，进门的入口。",
+      "sourceRef": "n5-v-773"
+    },
+    {
+      "id": "n5-q-058",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「日本に行く___、お土産を買います。」填入正确表达。",
+      "emoji": "🎁",
+      "options": [
+        {
+          "id": "a",
+          "text": "時",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "前",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "後",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "間",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「V辞書形+時」=～的时候。表示在那个时间点做某事。",
+      "sourceRef": "n5-g-047"
+    },
+    {
+      "id": "n5-q-059",
+      "type": "multiple-choice",
+      "topic": "vocabulary",
+      "question": "「似合う」的意思是？",
+      "emoji": "👗",
+      "options": [
+        {
+          "id": "a",
+          "text": "适合/相配",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "相似",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "见面",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "买",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「似合う（にあう）」=适合/相配。如「この服よく似合う」。",
+      "sourceRef": "n5-v-749"
+    },
+    {
+      "id": "n5-q-060",
+      "type": "multiple-choice",
+      "topic": "grammar",
+      "question": "「美味しい___？」（对吧？）填入正确表达。",
+      "emoji": "🤤",
+      "options": [
+        {
+          "id": "a",
+          "text": "でしょう",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "ですか",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ました",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ますか",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「～でしょう？」上升语调=对吧？向对方寻求确认。",
+      "sourceRef": "n5-g-048"
+    }
+  ]
+}

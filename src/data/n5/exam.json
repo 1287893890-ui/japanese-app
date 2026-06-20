@@ -1,0 +1,83 @@
+{
+  "level": "N5",
+  "sections": [
+    {
+      "id": "n5-exam-sec1",
+      "title": "問題1：漢字読み",
+      "titleCn": "汉字读音",
+      "description": "选出划线部分汉字正确的读法",
+      "emoji": "🔊",
+      "questions": [
+        {"id":"n5-ex-q-001","type":"multiple-choice","topic":"reading","question":"母は毎日、料理をします。下線部「母」の読み方は？","emoji":"🔊","context":"母は毎日、料理をします。","options":[{"id":"a","text":"はは","isCorrect":true},{"id":"b","text":"ちち","isCorrect":false},{"id":"c","text":"あね","isCorrect":false},{"id":"d","text":"あに","isCorrect":false}],"explanation":"「母（はは）」是谦称，用于称呼自己的母亲。B「ちち」是「父」。"},
+        {"id":"n5-ex-q-002","type":"multiple-choice","topic":"reading","question":"毎日、学校へ行きます。下線部「学校」の読み方は？","emoji":"🔊","context":"毎日、学校へ行きます。","options":[{"id":"a","text":"がっこう","isCorrect":true},{"id":"b","text":"がくこう","isCorrect":false},{"id":"c","text":"がっこ","isCorrect":false},{"id":"d","text":"かっこう","isCorrect":false}],"explanation":"「学校」读「がっこう」。促音「っ」不可省略。"},
+        {"id":"n5-ex-q-003","type":"multiple-choice","topic":"reading","question":"今週の土曜日は友達の誕生日です。下線部「今週」の読み方は？","emoji":"🔊","context":"今週の土曜日は友達の誕生日です。","options":[{"id":"a","text":"こんしゅう","isCorrect":true},{"id":"b","text":"こんしゅ","isCorrect":false},{"id":"c","text":"いましゅう","isCorrect":false},{"id":"d","text":"きんしゅう","isCorrect":false}],"explanation":"「今週」读「こんしゅう」=这周。"},
+        {"id":"n5-ex-q-004","type":"multiple-choice","topic":"reading","question":"駅の前で友達に会いました。下線部「駅」の読み方は？","emoji":"🔊","context":"駅の前で友達に会いました。","options":[{"id":"a","text":"えき","isCorrect":true},{"id":"b","text":"いき","isCorrect":false},{"id":"c","text":"でんしゃ","isCorrect":false},{"id":"d","text":"ばす","isCorrect":false}],"explanation":"「駅」读「えき」=车站。"},
+        {"id":"n5-ex-q-005","type":"multiple-choice","topic":"reading","question":"妹は大学で勉強しています。下線部「妹」の読み方は？","emoji":"🔊","context":"妹は大学で勉強しています。","options":[{"id":"a","text":"いもうと","isCorrect":true},{"id":"b","text":"おとうと","isCorrect":false},{"id":"c","text":"あね","isCorrect":false},{"id":"d","text":"あに","isCorrect":false}],"explanation":"「妹（いもうと）」=妹妹。B「おとうと」是「弟」。"}
+      ]
+    },
+    {
+      "id": "n5-exam-sec2",
+      "title": "問題2：文脈規定",
+      "titleCn": "选词填空",
+      "description": "从四个选项中选择最合适的词语填入空白处",
+      "emoji": "✍️",
+      "questions": [
+        {"id":"n5-ex-q-010","type":"multiple-choice","topic":"vocabulary","question":"毎朝パンを___ます。","emoji":"🍞","options":[{"id":"a","text":"食べ","isCorrect":true},{"id":"b","text":"飲み","isCorrect":false},{"id":"c","text":"見","isCorrect":false},{"id":"d","text":"聞き","isCorrect":false}],"explanation":"「パンを食べる」=吃面包。B「飲む」=喝，C「見る」=看，D「聞く」=听。"},
+        {"id":"n5-ex-q-011","type":"multiple-choice","topic":"vocabulary","question":"この部屋はとても___です。","emoji":"✨","options":[{"id":"a","text":"明るい","isCorrect":true},{"id":"b","text":"暗い","isCorrect":false},{"id":"c","text":"暑い","isCorrect":false},{"id":"d","text":"寒い","isCorrect":false}],"explanation":"形容房间的特征用「明るい」（明亮的）或「暗い」（暗的）。结合语境判断。"},
+        {"id":"n5-ex-q-012","type":"multiple-choice","topic":"vocabulary","question":"友達に___をあげました。","emoji":"🎁","options":[{"id":"a","text":"プレゼント","isCorrect":true},{"id":"b","text":"お金","isCorrect":false},{"id":"c","text":"手紙","isCorrect":false},{"id":"d","text":"電話","isCorrect":false}],"explanation":"「プレゼントをあげる」=送礼物。最自然的搭配。"},
+        {"id":"n5-ex-q-013","type":"multiple-choice","topic":"vocabulary","question":"___、すみません。駅はどこですか。","emoji":"🙋","options":[{"id":"a","text":"あのう","isCorrect":true},{"id":"b","text":"さあ","isCorrect":false},{"id":"c","text":"では","isCorrect":false},{"id":"d","text":"でも","isCorrect":false}],"explanation":"「あのう」是搭话时的语气词，相当于「那个…」。用于开头引起对方注意。"},
+        {"id":"n5-ex-q-014","type":"multiple-choice","topic":"vocabulary","question":"母は___が上手です。","emoji":"🍳","options":[{"id":"a","text":"料理","isCorrect":true},{"id":"b","text":"掃除","isCorrect":false},{"id":"c","text":"洗濯","isCorrect":false},{"id":"d","text":"勉強","isCorrect":false}],"explanation":"「料理が上手」=做饭好吃。符合「母」的语境。"}
+      ]
+    },
+    {
+      "id": "n5-exam-sec3",
+      "title": "問題3：文法",
+      "titleCn": "语法选择",
+      "description": "选择正确的语法表达填入空白处",
+      "emoji": "📝",
+      "questions": [
+        {"id":"n5-ex-q-020","type":"multiple-choice","topic":"grammar","question":"私は学生___ありません。","emoji":"📝","options":[{"id":"a","text":"では","isCorrect":true},{"id":"b","text":"は","isCorrect":false},{"id":"c","text":"が","isCorrect":false},{"id":"d","text":"を","isCorrect":false}],"explanation":"否定形：ではありません／じゃありません。"},
+        {"id":"n5-ex-q-021","type":"multiple-choice","topic":"grammar","question":"ここ___写真を撮らないでください。","emoji":"📸","options":[{"id":"a","text":"で","isCorrect":true},{"id":"b","text":"に","isCorrect":false},{"id":"c","text":"を","isCorrect":false},{"id":"d","text":"は","isCorrect":false}],"explanation":"「ここで」=在这个地方（动作发生场所），用助词「で」。"},
+        {"id":"n5-ex-q-022","type":"multiple-choice","topic":"grammar","question":"先生、ちょっと質問が___んですが。","emoji":"❓","options":[{"id":"a","text":"ある","isCorrect":true},{"id":"b","text":"いる","isCorrect":false},{"id":"c","text":"する","isCorrect":false},{"id":"d","text":"なる","isCorrect":false}],"explanation":"「質問がある」=有问题。无生命用「ある」。「質問があるんですが」=有个问题想问。"},
+        {"id":"n5-ex-q-023","type":"multiple-choice","topic":"grammar","question":"明日までにレポートを出さ___なりません。","emoji":"📄","options":[{"id":"a","text":"なければ","isCorrect":true},{"id":"b","text":"なくても","isCorrect":false},{"id":"c","text":"ないで","isCorrect":false},{"id":"d","text":"なかれば","isCorrect":false}],"explanation":"「～なければならない」=必须～。出さなければならない=必须提交。"},
+        {"id":"n5-ex-q-024","type":"multiple-choice","topic":"grammar","question":"すみません___、駅はどこですか。","emoji":"🗾","options":[{"id":"a","text":"が","isCorrect":true},{"id":"b","text":"は","isCorrect":false},{"id":"c","text":"を","isCorrect":false},{"id":"d","text":"に","isCorrect":false}],"explanation":"「すみませんが」=不好意思但…。铺垫引出话题的「が」用法。"}
+      ]
+    },
+    {
+      "id": "n5-exam-sec4",
+      "title": "問題4：並べ替え",
+      "titleCn": "句子排序",
+      "description": "将词语排列成正确的句子，选出★位置的词语",
+      "emoji": "🧩",
+      "questions": [
+        {"id":"n5-ex-q-030","type":"multiple-choice","topic":"ordering","question":"つくえの  _____  _____  ★  _____ あります。\n①に　②が　③本　④上","emoji":"🧩","options":[{"id":"a","text":"①","isCorrect":true},{"id":"b","text":"②","isCorrect":false},{"id":"c","text":"③","isCorrect":false},{"id":"d","text":"④","isCorrect":false}],"explanation":"正确排序：つくえの[上]に[本]が(★)[あります]。★是「が」。完整句：机の上に本があります。"},
+        {"id":"n5-ex-q-031","type":"multiple-choice","topic":"ordering","question":"わたしは  _____  _____  ★  _____ 行きます。\n①に　②学校　③毎日　④へ","emoji":"🧩","options":[{"id":"a","text":"①","isCorrect":true},{"id":"b","text":"②","isCorrect":false},{"id":"c","text":"③","isCorrect":false},{"id":"d","text":"④","isCorrect":false}],"explanation":"正确排序：わたしは[毎日][学校]へ(★)[行きます]。完整句：私は毎日学校へ行きます。"},
+        {"id":"n5-ex-q-032","type":"multiple-choice","topic":"ordering","question":"きのう  _____  _____  ★  _____ 見ました。\n①映画　②友達　③と　④を","emoji":"🧩","options":[{"id":"a","text":"③","isCorrect":true},{"id":"b","text":"①","isCorrect":false},{"id":"c","text":"②","isCorrect":false},{"id":"d","text":"④","isCorrect":false}],"explanation":"正确排序：きのう[友達]と[映画]を(★)[見ました]。★是「を」。完整句：昨日友達と映画を見ました。"}
+      ]
+    },
+    {
+      "id": "n5-exam-sec5",
+      "title": "問題5：読解",
+      "titleCn": "短文阅读",
+      "description": "阅读短文，回答后面的问题",
+      "emoji": "📖",
+      "questions": [
+        {"id":"n5-ex-q-040","type":"multiple-choice","topic":"reading-comp","context":"田中さんは毎朝7時に起きます。朝ごはんはパンと卵です。コーヒーを飲みます。8時に家を出ます。会社まで電車で30分かかります。","question":"田中さんは朝、何を飲みますか。","emoji":"📖","options":[{"id":"a","text":"コーヒー","isCorrect":true},{"id":"b","text":"お茶","isCorrect":false},{"id":"c","text":"牛乳","isCorrect":false},{"id":"d","text":"水","isCorrect":false}],"explanation":"短文明确提到「コーヒーを飲みます」。其他选项文中未提及。"},
+        {"id":"n5-ex-q-041","type":"multiple-choice","topic":"reading-comp","question":"上の文章で、田中さんは何時に家を出ますか。","emoji":"📖","context":"田中さんは毎朝7時に起きます。朝ごはんはパンと卵です。コーヒーを飲みます。8時に家を出ます。会社まで電車で30分かかります。","options":[{"id":"a","text":"8時","isCorrect":true},{"id":"b","text":"7時","isCorrect":false},{"id":"c","text":"8時半","isCorrect":false},{"id":"d","text":"7時半","isCorrect":false}],"explanation":"短文明确写「8時に家を出ます」。7時是起床时间。"},
+        {"id":"n5-ex-q-042","type":"multiple-choice","topic":"reading-comp","context":"山下さんの家族は4人です。山下さん、奥さん、息子さんと娘さんです。息子さんは高校生で、娘さんは中学生です。奥さんは病院で働いています。山下さんは会社員です。","question":"山下さんの奥さんはどこで働いていますか。","emoji":"📖","options":[{"id":"a","text":"病院","isCorrect":true},{"id":"b","text":"会社","isCorrect":false},{"id":"c","text":"学校","isCorrect":false},{"id":"d","text":"家","isCorrect":false}],"explanation":"文中明确写「奥さんは病院で働いています」。山下さん自己在公司工作。"},
+        {"id":"n5-ex-q-043","type":"multiple-choice","topic":"reading-comp","context":"今日は日曜日です。いい天気です。私は友達と公園へ行きました。公園でお弁当を食べました。とても美味しかったです。それから、散歩しました。4時に家に帰りました。","question":"「私」は何をしましたか。","emoji":"📖","options":[{"id":"a","text":"友達と公園でお弁当を食べて散歩した","isCorrect":true},{"id":"b","text":"一人で公園に行った","isCorrect":false},{"id":"c","text":"友達と映画を見た","isCorrect":false},{"id":"d","text":"家でお弁当を食べた","isCorrect":false}],"explanation":"文中明确说和朋友一起去公园、吃便当、然后散步。不是一个人，也不是看电影。"}
+      ]
+    },
+    {
+      "id": "n5-exam-sec6",
+      "title": "問題6：情報検索",
+      "titleCn": "信息检索",
+      "description": "根据提示信息回答相关问题",
+      "emoji": "🔍",
+      "questions": [
+        {"id":"n5-ex-q-050","type":"multiple-choice","topic":"info-retrieval","question":"このアルバイトは何曜日に入れますか。","emoji":"🔍","context":"【アルバイト募集】仕事：コンビニの店員／時間：午後5時～午後10時／時給：1,000円／曜日：月曜日～金曜日／連絡先：03-1234-5678（田中）","options":[{"id":"a","text":"月曜日から金曜日","isCorrect":true},{"id":"b","text":"土曜日と日曜日","isCorrect":false},{"id":"c","text":"毎日","isCorrect":false},{"id":"d","text":"日曜日だけ","isCorrect":false}],"explanation":"信息明确写「曜日：月曜日～金曜日」=周一到周五。"},
+        {"id":"n5-ex-q-051","type":"multiple-choice","topic":"info-retrieval","question":"上の求人情報で、1時間にいくらもらえますか。","emoji":"💰","context":"【アルバイト募集】仕事：コンビニの店員／時間：午後5時～午後10時／時給：1,000円／曜日：月曜日～金曜日／連絡先：03-1234-5678（田中）","options":[{"id":"a","text":"1,000円","isCorrect":true},{"id":"b","text":"500円","isCorrect":false},{"id":"c","text":"1,500円","isCorrect":false},{"id":"d","text":"2,000円","isCorrect":false}],"explanation":"「時給：1,000円」=每小时工资1000日元。"}
+      ]
+    }
+  ]
+}

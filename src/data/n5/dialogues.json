@@ -1,0 +1,136 @@
+{
+  "level": "N5",
+  "levelName": "N5",
+  "levelNameCn": "入门",
+  "emoji": "🌱",
+  "dialogues": [
+    {
+      "id": "n5-d-001", "title": "コンビニで", "titleCn": "在便利店", "emoji": "🏪", "scene": "便利店购物",
+      "characters": [{"id":"customer","name":"お客さん","nameCn":"顾客","avatar":"🧑","color":"#4A90D9"},{"id":"clerk","name":"店員","nameCn":"店员","avatar":"👩‍💼","color":"#E875A3"}],
+      "lines": [
+        {"speakerId":"clerk","jp":"いらっしゃいませ。","reading":"いらっしゃいませ。","cn":"欢迎光临。"},
+        {"speakerId":"customer","jp":"すみません、おにぎりはどこにありますか。","reading":"すみません、おにぎりはどこにありますか。","cn":"请问，饭团在哪里？"},
+        {"speakerId":"clerk","jp":"あちらです。右側の棚にございます。","reading":"あちらです。みぎがわのたなにございます。","cn":"在那边。右边的架子上。"},
+        {"speakerId":"customer","jp":"ありがとうございます。じゃ、これとこれをください。","reading":"ありがとうございます。じゃ、これとこれをください。","cn":"谢谢。那请给我这个和这个。"},
+        {"speakerId":"clerk","jp":"かしこまりました。お会計は350円です。袋はご利用になりますか。","reading":"かしこまりました。おかいけいはさんびゃくごじゅうえんです。ふくろはごりようになりますか。","cn":"好的。一共350日元。需要袋子吗？"},
+        {"speakerId":"customer","jp":"大丈夫です。ありがとうございます。","reading":"だいじょうぶです。ありがとうございます。","cn":"不用了。谢谢。"}
+      ],
+      "vocabularyHighlights": [{"word":"おにぎり","reading":"おにぎり","meaning":"饭团"},{"word":"棚","reading":"たな","meaning":"架子"},{"word":"会計","reading":"かいけい","meaning":"结账"},{"word":"袋","reading":"ふくろ","meaning":"袋子"}]
+    },
+    {
+      "id": "n5-d-002", "title": "初めまして", "titleCn": "初次见面", "emoji": "🤝", "scene": "自我介绍",
+      "characters": [{"id":"tanaka","name":"田中さん","nameCn":"田中","avatar":"👨","color":"#10B981"},{"id":"lee","name":"李さん","nameCn":"小李","avatar":"👩","color":"#F59E0B"}],
+      "lines": [
+        {"speakerId":"lee","jp":"初めまして、李です。中国から来ました。どうぞよろしくお願いします。","reading":"はじめまして、りです。ちゅうごくからきました。どうぞよろしくおねがいします。","cn":"初次见面，我姓李。从中国来的。请多关照。"},
+        {"speakerId":"tanaka","jp":"初めまして、田中です。こちらこそよろしくお願いします。","reading":"はじめまして、たなかです。こちらこそよろしくおねがいします。","cn":"初次见面，我姓田中。我才是请多关照。"},
+        {"speakerId":"lee","jp":"田中さんはお仕事は何ですか。","reading":"たなかさんはおしごとはなんですか。","cn":"田中先生的工作是什么？"},
+        {"speakerId":"tanaka","jp":"私は会社員です。李さんは？","reading":"わたしはかいしゃいんです。りさんは？","cn":"我是公司职员。李小姐呢？"},
+        {"speakerId":"lee","jp":"私は学生です。日本語を勉強しています。","reading":"わたしはがくせいです。にほんごをべんきょうしています。","cn":"我是学生。正在学日语。"},
+        {"speakerId":"tanaka","jp":"日本語がお上手ですね。いつから勉強していますか。","reading":"にほんごがおじょうずですね。いつからべんきょうしていますか。","cn":"日语说得很好啊。从什么时候开始学的？"},
+        {"speakerId":"lee","jp":"いいえ、まだまだです。3か月前から勉強しています。","reading":"いいえ、まだまだです。さんかげつまえからべんきょうしています。","cn":"哪里哪里，还差得远呢。三个月前开始学的。"}
+      ],
+      "vocabularyHighlights": [{"word":"初めまして","reading":"はじめまして","meaning":"初次见面"},{"word":"会社員","reading":"かいしゃいん","meaning":"公司职员"},{"word":"上手","reading":"じょうず","meaning":"擅长"}]
+    },
+    {
+      "id": "n5-d-003", "title": "レストランで", "titleCn": "在餐厅", "emoji": "🍽️", "scene": "点餐",
+      "characters": [{"id":"customer","name":"お客さん","nameCn":"顾客","avatar":"👩","color":"#6366F1"},{"id":"waiter","name":"店員","nameCn":"服务员","avatar":"🧑‍🍳","color":"#8B5CF6"}],
+      "lines": [
+        {"speakerId":"waiter","jp":"いらっしゃいませ。何名様ですか。","reading":"いらっしゃいませ。なんめいさまですか。","cn":"欢迎光临。请问几位？"},
+        {"speakerId":"customer","jp":"一人です。","reading":"ひとりです。","cn":"一位。"},
+        {"speakerId":"waiter","jp":"こちらへどうぞ。メニューをどうぞ。","reading":"こちらへどうぞ。メニューをどうぞ。","cn":"这边请。请看菜单。"},
+        {"speakerId":"customer","jp":"すみません、おすすめは何ですか。","reading":"すみません、おすすめはなんですか。","cn":"请问有什么推荐的吗？"},
+        {"speakerId":"waiter","jp":"本日のおすすめは天ぷら定食です。","reading":"ほんじつのおすすめはてんぷらていしょくです。","cn":"今天的推荐是天妇罗套餐。"},
+        {"speakerId":"customer","jp":"じゃ、天ぷら定食をお願いします。","reading":"じゃ、てんぷらていしょくをおねがいします。","cn":"那请来一份天妇罗套餐。"}
+      ],
+      "vocabularyHighlights": [{"word":"おすすめ","reading":"おすすめ","meaning":"推荐"},{"word":"天ぷら","reading":"てんぷら","meaning":"天妇罗"},{"word":"定食","reading":"ていしょく","meaning":"套餐"}]
+    },
+    {
+      "id": "n5-d-004", "title": "道を尋ねる", "titleCn": "问路", "emoji": "🗺️", "scene": "问路",
+      "characters": [{"id":"passerby","name":"通行人","nameCn":"路人","avatar":"🧑","color":"#EF4444"},{"id":"helper","name":"親切な人","nameCn":"热心人","avatar":"👨‍🦳","color":"#3B82F6"}],
+      "lines": [
+        {"speakerId":"passerby","jp":"すみません、駅はどこですか。","reading":"すみません、えきはどこですか。","cn":"请问，车站在哪里？"},
+        {"speakerId":"helper","jp":"この道をまっすぐ行って、二つ目の信号を右に曲がってください。","reading":"このみちをまっすぐいって、ふたつめのしんごうをみぎにまがってください。","cn":"沿着这条路直走，第二个红绿灯右转。"},
+        {"speakerId":"passerby","jp":"どのくらいかかりますか。","reading":"どのくらいかかりますか。","cn":"大概需要多长时间？"},
+        {"speakerId":"helper","jp":"歩いて10分ぐらいです。","reading":"あるいてじゅっぷんぐらいです。","cn":"走路大约10分钟。"},
+        {"speakerId":"passerby","jp":"ありがとうございます。助かりました。","reading":"ありがとうございます。たすかりました。","cn":"非常感谢，帮大忙了。"}
+      ],
+      "vocabularyHighlights": [{"word":"まっすぐ","reading":"まっすぐ","meaning":"笔直"},{"word":"信号","reading":"しんごう","meaning":"红绿灯"},{"word":"曲がる","reading":"まがる","meaning":"拐弯"}]
+    },
+    {
+      "id": "n5-d-005", "title": "買い物", "titleCn": "购物", "emoji": "🛍️", "scene": "买衣服",
+      "characters": [{"id":"customer","name":"お客さん","nameCn":"顾客","avatar":"👩","color":"#EC4899"},{"id":"staff","name":"店員","nameCn":"店员","avatar":"👩‍💼","color":"#F97316"}],
+      "lines": [
+        {"speakerId":"staff","jp":"いらっしゃいませ。何をお探しですか。","reading":"いらっしゃいませ。なにをおさがしですか。","cn":"欢迎光临。您在找什么？"},
+        {"speakerId":"customer","jp":"このコート、とてもかわいいですね。いくらですか。","reading":"このコート、とてもかわいいですね。いくらですか。","cn":"这件外套好可爱啊。多少钱？"},
+        {"speakerId":"staff","jp":"そちらは9,800円です。試着もできますよ。","reading":"そちらはきゅうせんはっぴゃくえんです。しちゃくもできますよ。","cn":"那件是9800日元。也可以试穿哦。"},
+        {"speakerId":"customer","jp":"じゃ、試着してもいいですか。Mサイズをお願いします。","reading":"じゃ、しちゃくしてもいいですか。エムサイズをおねがいします。","cn":"那可以试穿吗？请给我M号。"},
+        {"speakerId":"staff","jp":"はい、少々お待ちください。...どうぞ。","reading":"はい、しょうしょうおまちください。...どうぞ。","cn":"好的，请稍等。...请。"},
+        {"speakerId":"customer","jp":"ちょうどいいです。これ、ください。","reading":"ちょうどいいです。これ、ください。","cn":"正合适。请给我这个。"}
+      ],
+      "vocabularyHighlights": [{"word":"コート","reading":"コート","meaning":"外套"},{"word":"試着","reading":"しちゃく","meaning":"试穿"},{"word":"ちょうど","reading":"ちょうど","meaning":"正好"}]
+    },
+    {
+      "id": "n5-d-006", "title": "電話で", "titleCn": "打电话", "emoji": "📞", "scene": "给朋友打电话",
+      "characters": [{"id":"yamada","name":"山田さん","nameCn":"山田","avatar":"👨","color":"#8B5CF6"},{"id":"suzuki","name":"鈴木さん","nameCn":"铃木","avatar":"👩","color":"#EC4899"}],
+      "lines": [
+        {"speakerId":"yamada","jp":"もしもし、山田ですが、鈴木さんはいらっしゃいますか。","reading":"もしもし、やまだですが、すずきさんはいらっしゃいますか。","cn":"喂，我是山田，请问铃木小姐在吗？"},
+        {"speakerId":"suzuki","jp":"あ、山田さん。私です。","reading":"あ、やまださん。わたしです。","cn":"啊，山田先生。是我。"},
+        {"speakerId":"yamada","jp":"明日のパーティー、何時に集合ですか。","reading":"あしたのパーティー、なんじにしゅうごうですか。","cn":"明天的派对几点集合？"},
+        {"speakerId":"suzuki","jp":"6時に駅の前で待ち合わせましょう。","reading":"ろくじにえきのまえでまちあわせましょう。","cn":"六点在车站前面碰头吧。"},
+        {"speakerId":"yamada","jp":"わかりました。じゃ、また明日。","reading":"わかりました。じゃ、またあした。","cn":"明白了。那明天见。"}
+      ],
+      "vocabularyHighlights": [{"word":"もしもし","reading":"もしもし","meaning":"喂（电话用语）"},{"word":"集合","reading":"しゅうごう","meaning":"集合"},{"word":"待ち合わせ","reading":"まちあわせ","meaning":"碰头/会合"}]
+    },
+    {
+      "id": "n5-d-007", "title": "郵便局で", "titleCn": "在邮局", "emoji": "📮", "scene": "寄包裹",
+      "characters": [{"id":"customer","name":"お客さん","nameCn":"顾客","avatar":"🧑","color":"#3B82F6"},{"id":"staff","name":"局員","nameCn":"邮局职员","avatar":"👩‍💼","color":"#10B981"}],
+      "lines": [
+        {"speakerId":"customer","jp":"すみません、この荷物を中国に送りたいんですが。","reading":"すみません、このにもつをちゅうごくにおくりたいんですが。","cn":"请问，我想把这个包裹寄到中国。"},
+        {"speakerId":"staff","jp":"船便と航空便がございますが、どちらになさいますか。","reading":"ふなびんとこうくうびんがございますが、どちらになさいますか。","cn":"有海运和空运，您选哪个？"},
+        {"speakerId":"customer","jp":"航空便でお願いします。いくらですか。","reading":"こうくうびんでおねがいします。いくらですか。","cn":"请用空运。多少钱？"},
+        {"speakerId":"staff","jp":"重さを測りますね。...1,200円になります。","reading":"おもさをはかりますね。...せんにひゃくえんになります。","cn":"我称一下重量。...是1200日元。"},
+        {"speakerId":"customer","jp":"はい、お願いします。どのくらいかかりますか。","reading":"はい、おねがいします。どのくらいかかりますか。","cn":"好的，拜托了。大概需要多久？"},
+        {"speakerId":"staff","jp":"一週間ぐらいで届くと思います。","reading":"いっしゅうかんぐらいでとどくとおもいます。","cn":"我想大概一周左右能到。"}
+      ],
+      "vocabularyHighlights": [{"word":"荷物","reading":"にもつ","meaning":"包裹/行李"},{"word":"航空便","reading":"こうくうびん","meaning":"航空邮件"},{"word":"届く","reading":"とどく","meaning":"送到"}]
+    },
+    {
+      "id": "n5-d-008", "title": "誘い", "titleCn": "邀请朋友", "emoji": "🎉", "scene": "邀请看电影",
+      "characters": [{"id":"taro","name":"太郎","nameCn":"太郎","avatar":"👦","color":"#F59E0B"},{"id":"hanako","name":"花子","nameCn":"花子","avatar":"👧","color":"#EC4899"}],
+      "lines": [
+        {"speakerId":"taro","jp":"花子さん、今週の土曜日、暇ですか。","reading":"はなこさん、こんしゅうのどようび、ひまですか。","cn":"花子小姐，这周六有空吗？"},
+        {"speakerId":"hanako","jp":"土曜日は特に予定がありません。","reading":"どようびはとくによていがありません。","cn":"周六没什么特别的安排。"},
+        {"speakerId":"taro","jp":"新しくできた映画館で映画を見ませんか。","reading":"あたらしくできたえいがかんでえいがをみませんか。","cn":"要不要去新开的电影院看电影？"},
+        {"speakerId":"hanako","jp":"いいですね。何の映画を見ますか。","reading":"いいですね。なんのえいがをみますか。","cn":"好啊。看什么电影？"},
+        {"speakerId":"taro","jp":"日本のアニメ映画が面白いそうです。","reading":"にほんのアニメえいががおもしろいそうです。","cn":"听说日本的动画电影很有趣。"},
+        {"speakerId":"hanako","jp":"楽しみにしています！何時にどこで会いましょうか。","reading":"たのしみにしています！なんじにどこであいましょうか。","cn":"很期待！几点在哪里见面呢？"},
+        {"speakerId":"taro","jp":"午後2時に駅の改札口の前でどうですか。","reading":"ごごにじにえきのかいさつぐちのまえでどうですか。","cn":"下午两点在车站检票口前面怎么样？"}
+      ],
+      "vocabularyHighlights": [{"word":"予定","reading":"よてい","meaning":"预定/安排"},{"word":"映画館","reading":"えいがかん","meaning":"电影院"},{"word":"改札口","reading":"かいさつぐち","meaning":"检票口"}]
+    },
+    {
+      "id": "n5-d-009", "title": "天気の話", "titleCn": "聊天气", "emoji": "☀️", "scene": "日常寒暄",
+      "characters": [{"id":"sato","name":"佐藤さん","nameCn":"佐藤","avatar":"👨","color":"#3B82F6"},{"id":"kato","name":"加藤さん","nameCn":"加藤","avatar":"👩","color":"#F97316"}],
+      "lines": [
+        {"speakerId":"sato","jp":"毎日暑いですね。","reading":"まいにちあついですね。","cn":"每天都很热呢。"},
+        {"speakerId":"kato","jp":"本当にそうですね。今年の夏は特に暑いと思います。","reading":"ほんとうにそうですね。ことしのなつはとくにあついとおもいます。","cn":"真的。我觉得今年夏天特别热。"},
+        {"speakerId":"sato","jp":"天気予報によると、明日は少し涼しくなるそうですよ。","reading":"てんきよほうによると、あしたはすこしすずしくなるそうですよ。","cn":"据天气预报说明天会稍微凉快一点。"},
+        {"speakerId":"kato","jp":"そうですか。それはよかった。雨は降りますか。","reading":"そうですか。それはよかった。あめはふりますか。","cn":"是吗。那太好了。会下雨吗？"},
+        {"speakerId":"sato","jp":"午後から降るかもしれません。傘を持って行ったほうがいいですよ。","reading":"ごごからふるかもしれません。かさをもっていったほうがいいですよ。","cn":"下午也许会下。最好带伞去哦。"}
+      ],
+      "vocabularyHighlights": [{"word":"天気予報","reading":"てんきよほう","meaning":"天气预报"},{"word":"涼しい","reading":"すずしい","meaning":"凉爽"},{"word":"傘","reading":"かさ","meaning":"伞"}]
+    },
+    {
+      "id": "n5-d-010", "title": "家族の話", "titleCn": "聊家人", "emoji": "👨‍👩‍👧‍👦", "scene": "介绍家人",
+      "characters": [{"id":"kimura","name":"木村さん","nameCn":"木村","avatar":"👩","color":"#8B5CF6"},{"id":"ito","name":"伊藤さん","nameCn":"伊藤","avatar":"👨","color":"#10B981"}],
+      "lines": [
+        {"speakerId":"kimura","jp":"伊藤さんのご家族は何人ですか。","reading":"いとうさんのごかぞくはなんにんですか。","cn":"伊藤先生家里有几口人？"},
+        {"speakerId":"ito","jp":"4人家族です。妻と息子と娘がいます。","reading":"よにんかぞくです。つまとむすことむすめがいます。","cn":"四口人。有妻子、儿子和女儿。"},
+        {"speakerId":"kimura","jp":"息子さんはいくつですか。","reading":"むすこさんはいくつですか。","cn":"儿子多大了？"},
+        {"speakerId":"ito","jp":"息子は10歳で、娘は7歳です。二人とも小学生です。","reading":"むすこはじゅっさいで、むすめはななさいです。ふたりともしょうがくせいです。","cn":"儿子十岁，女儿七岁。两人都是小学生。"},
+        {"speakerId":"kimura","jp":"いいですね。家はにぎやかでしょう。","reading":"いいですね。いえはにぎやかでしょう。","cn":"真好。家里一定很热闹吧。"}
+      ],
+      "vocabularyHighlights": [{"word":"家族","reading":"かぞく","meaning":"家人/家庭"},{"word":"息子","reading":"むすこ","meaning":"儿子"},{"word":"娘","reading":"むすめ","meaning":"女儿"},{"word":"にぎやか","reading":"にぎやか","meaning":"热闹"}]
+    }
+  ]
+}
