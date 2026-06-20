@@ -19,7 +19,7 @@ export default function FlashCardDeck({ words, onComplete, onWordResult }) {
     setResults(prev => [...prev, result])
     onWordResult?.(wordId, status)
 
-    if (currentIndex + 1 >= words.length) {
+    if (currentIndex + 1 >= activeWords.length) {
       setTimeout(() => setIsComplete(true), 300)
     } else {
       setTimeout(() => setCurrentIndex(prev => prev + 1), 200)
