@@ -1,8 +1,9 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import MultipleChoice from './MultipleChoice'
 import QuizProgress from './QuizProgress'
 import QuizTimer from './QuizTimer'
+import { shuffle } from '../../utils/shuffle'
 
 /** 阅读组子题目的选项组件 */
 function SubQuestionChoice({ subQuestion, selected, onSelect, submitted, index }) {
@@ -117,6 +118,16 @@ function QuestionNav({ questions, answers, currentIndex, onJump, onClose }) {
 }
 
 export default function QuizRunner({ questions, onFinish, onAnswer }) {
+  /** 一次性打乱所有题目选项顺序，确保正确答案不总在 A */
+  const [shuffledQuestions] = useState(() =>
+    questions.map(q => {
+      if (q.type === 'reading-group') {
+        return { ...q, subQuestions: q.subQuestions.map(sq => ({ ...sq, options: shuffle(sq.options) })) }
+      }
+      return q.options ? { ...q, options: shuffle(q.options) } : q
+    })
+  )
+
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState([])
   const [lastAnswer, setLastAnswer] = useState(null)
@@ -124,7 +135,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
   const [groupSelections, setGroupSelections] = useState({})
   const [showNav, setShowNav] = useState(false)
 
-  const question = questions[currentIndex]
+  const question = shuffledQuestions[currentIndex]
   const isGroup = question?.type === 'reading-group'
 
   /** 判断某题是否已作答 */
@@ -136,7 +147,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
     return answers.some(a => a.questionId === q.id)
   }, [answers])
 
-  const allAnswered = questions.every(q => isQuestionAnswered(q))
+  const allAnswered = shuffledQuestions.every(q => isQuestionAnswered(q))
 
   const handleAnswer = useCallback((selected, isCorrect) => {
     const timeTaken = Math.round((Date.now() - startTime) / 1000)
@@ -169,7 +180,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
 
   /** 跳转到任意题目（已答则恢复反馈，未答则空白） */
   const jumpToQuestion = useCallback((index) => {
-    const target = questions[index]
+    const target = shuffledQuestions[index]
     setCurrentIndex(index)
     if (target?.type === 'reading-group') {
       const subIds = target.subQuestions.map(sq => sq.id)
@@ -182,7 +193,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
   }, [questions, answers])
 
   const handleNext = useCallback(() => {
-    if (currentIndex >= questions.length - 1) {
+    if (currentIndex >= shuffledQuestions.length - 1) {
       if (allAnswered) {
         const totalTime = Math.round((Date.now() - startTime) / 1000)
         onFinish?.({ answers: [...answers], totalTime })
@@ -191,7 +202,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
     }
     {
       const nextIndex = currentIndex + 1
-      const target = questions[nextIndex]
+      const target = shuffledQuestions[nextIndex]
       setCurrentIndex(nextIndex)
       if (target?.type === 'reading-group') {
         const subIds = target.subQuestions.map(sq => sq.id)
@@ -212,7 +223,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
     <div className="flex flex-col w-full max-w-md mx-auto">
       {/* Progress & Timer + Nav button */}
       <div className="flex items-center justify-between mb-5">
-        <QuizProgress current={currentIndex + 1} total={questions.length} />
+        <QuizProgress current={currentIndex + 1} total={shuffledQuestions.length} />
         <div className="flex items-center gap-2">
           <QuizTimer startTime={startTime} />
           <button
@@ -286,7 +297,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     )
                   })()}
 
-                  {currentIndex >= questions.length - 1 && !allAnswered ? (
+                  {currentIndex >= shuffledQuestions.length - 1 && !allAnswered ? (
                     <p className="text-center text-sm text-amber-600 font-medium px-2">
                       ⚠️ 前面还有未答的题目，点击右上角 <span className="font-bold bg-amber-100 px-1.5 py-0.5 rounded">☰</span> 跳转作答
                     </p>
@@ -294,9 +305,9 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     <button
                       onClick={handleNext}
                       className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                        ${(allAnswered && currentIndex >= questions.length - 1) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                        ${(allAnswered && currentIndex >= shuffledQuestions.length - 1) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
                     >
-                      {(allAnswered && currentIndex >= questions.length - 1) ? '📊 查看结果' : '下一题 →'}
+                      {(allAnswered && currentIndex >= shuffledQuestions.length - 1) ? '📊 查看结果' : '下一题 →'}
                     </button>
                   )}
                 </motion.div>
@@ -354,7 +365,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     </div>
                   )}
 
-                  {currentIndex >= questions.length - 1 && !allAnswered ? (
+                  {currentIndex >= shuffledQuestions.length - 1 && !allAnswered ? (
                     <p className="text-center text-sm text-amber-600 font-medium px-2">
                       ⚠️ 前面还有未答的题目，点击右上角 <span className="font-bold bg-amber-100 px-1.5 py-0.5 rounded">☰</span> 跳转作答
                     </p>
@@ -362,9 +373,9 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     <button
                       onClick={handleNext}
                       className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                        ${(allAnswered && currentIndex >= questions.length - 1) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                        ${(allAnswered && currentIndex >= shuffledQuestions.length - 1) ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
                     >
-                      {(allAnswered && currentIndex >= questions.length - 1) ? '📊 查看结果' : '下一题 →'}
+                      {(allAnswered && currentIndex >= shuffledQuestions.length - 1) ? '📊 查看结果' : '下一题 →'}
                     </button>
                   )}
                 </motion.div>
@@ -378,7 +389,7 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
       <AnimatePresence>
         {showNav && (
           <QuestionNav
-            questions={questions}
+            questions={shuffledQuestions}
             answers={answers}
             currentIndex={currentIndex}
             onJump={jumpToQuestion}
