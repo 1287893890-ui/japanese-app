@@ -32,6 +32,7 @@ export default function FlashcardPage() {
     if (knowCount === results.length) {
       dispatch({ type: 'UNLOCK_ACHIEVEMENT', id: 'perfect-quiz' })
     }
+    navigate(`/learn/${level}`)
   }
 
   return (
