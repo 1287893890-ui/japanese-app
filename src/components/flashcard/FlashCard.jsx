@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useSwipe } from '../../hooks/useSwipe'
 import { speakWord } from '../../utils/audio'
 import { useApp } from '../../context/AppContext'
@@ -26,12 +26,7 @@ export default function FlashCard({ word, onResult }) {
     setIsFlipped(false)
   }, [word.id, onResult])
 
-  const swipeHandlers = useSwipe(
-    handleReview,
-    handleKnow,
-    null, // no down action
-    70
-  )
+  const swipeHandlers = useSwipe(handleReview, handleKnow, null, 70)
 
   const handleSpeak = (e) => {
     e.stopPropagation()
@@ -63,12 +58,12 @@ export default function FlashCard({ word, onResult }) {
             >
               🔊
             </button>
-            <p className="text-4xl font-bold text-slate-800 mb-6 text-center">{word.word}</p>
+            <p className="text-4xl font-bold text-slate-800 mb-6 text-center tracking-wide">{word.word}</p>
             {!isFlipped && (
-              <p className="text-xs text-slate-300 mt-2">点击翻转查看含义 ↘</p>
+              <p className="text-sm text-slate-300 mt-2">点击翻转查看含义</p>
             )}
             {word.partOfSpeech && (
-              <span className="mt-2 text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full">
+              <span className="mt-2 text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full font-medium">
                 {word.partOfSpeech}
               </span>
             )}
@@ -80,10 +75,10 @@ export default function FlashCard({ word, onResult }) {
               flex flex-col items-center justify-center p-6 backface-hidden text-white"
             style={{ transform: 'rotateY(180deg)' }}
           >
-            <p className="text-5xl mb-4">{word.meaning}</p>
-            <p className="text-xl text-white/80 mb-2">{word.reading}</p>
+            <p className="text-4xl font-bold mb-4 tracking-wide">{word.meaning}</p>
+            <p className="text-lg text-white/80 mb-2">{word.reading}</p>
             {word.exampleJp && (
-              <div className="mt-4 p-3 bg-white/10 rounded-xl text-center">
+              <div className="mt-4 p-3 bg-white/10 rounded-xl text-center max-w-full">
                 <p className="text-sm text-white/90">{word.exampleJp}</p>
                 {word.exampleReading && (
                   <p className="text-xs text-white/60 mt-1">{word.exampleReading}</p>
@@ -99,27 +94,22 @@ export default function FlashCard({ word, onResult }) {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex items-center justify-center gap-4 mt-6">
+      <div className="flex items-center gap-3 mt-5">
         <button
           onClick={handleReview}
-          className="w-14 h-14 bg-rose-50 text-rose-500 rounded-full flex items-center justify-center text-2xl
-            hover:bg-rose-100 active:scale-90 transition-all shadow-sm"
-          title="需要复习"
+          className="flex-1 py-3.5 rounded-2xl font-semibold text-base bg-rose-50 text-rose-600
+            hover:bg-rose-100 active:scale-95 transition-all shadow-sm"
         >
-          🔄
+          需复习
         </button>
-<button
+        <button
           onClick={handleKnow}
-          className="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center text-2xl
-            hover:bg-emerald-100 active:scale-90 transition-all shadow-sm"
-          title="已经掌握"
+          className="flex-1 py-3.5 rounded-2xl font-semibold text-base bg-emerald-50 text-emerald-600
+            hover:bg-emerald-100 active:scale-95 transition-all shadow-sm"
         >
-          ✅
+          已掌握
         </button>
       </div>
-      <p className="text-xs text-slate-300 text-center mt-3">
-        ← 需复习 | ✅ 已掌握 →
-      </p>
     </div>
   )
 }

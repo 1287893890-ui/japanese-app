@@ -44,10 +44,12 @@ export default function FlashCardDeck({ words, onComplete, onWordResult }) {
   }
 
   return (
-    <div className="flex flex-col items-center w-full max-w-sm mx-auto">
-      <DeckProgress current={progress.current} total={progress.total} />
+    <div className="flex flex-col w-full max-w-sm mx-auto min-h-[calc(100dvh-7rem)]">
+      <div className="px-1 mb-2">
+        <DeckProgress current={progress.current} total={progress.total} />
+      </div>
 
-      <div className="relative w-full h-[420px] flex items-center justify-center">
+      <div className="flex-1 flex items-start justify-center pt-2">
         <AnimatePresence mode="wait">
           {!isComplete ? (
             <motion.div
@@ -56,7 +58,7 @@ export default function FlashCardDeck({ words, onComplete, onWordResult }) {
               animate={{ opacity: 1, x: 0, scale: 1 }}
               exit={{ opacity: 0, x: -100, scale: 0.9 }}
               transition={{ duration: 0.25 }}
-              className="absolute inset-0 flex items-center justify-center"
+              className="w-full"
             >
               <FlashCard word={currentWord} onResult={handleResult} />
             </motion.div>
@@ -65,11 +67,11 @@ export default function FlashCardDeck({ words, onComplete, onWordResult }) {
               key="complete"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="absolute inset-0 flex items-center justify-center"
+              className="w-full"
             >
               <DeckComplete
                 results={results}
-                total={words.length}
+                total={activeWords.length}
                 onRestart={handleRestart}
                 onFinish={() => onComplete?.(results)}
               />

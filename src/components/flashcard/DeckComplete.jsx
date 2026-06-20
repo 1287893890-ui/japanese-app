@@ -22,14 +22,14 @@ export default function DeckComplete({ results, total, onRestart, onFinish }) {
         <p className="text-slate-500 text-sm mt-1">{msg.text}</p>
       </div>
 
-      <div className="flex items-center justify-center gap-6 text-sm">
+      <div className="flex items-center justify-center gap-8">
         <div className="text-center">
-          <div className="text-2xl font-bold text-success">{knowCount}</div>
-          <div className="text-xs text-slate-400">已掌握 ✅</div>
+          <div className="text-3xl font-bold text-emerald-500">{knowCount}</div>
+          <div className="text-sm text-slate-500 font-medium mt-0.5">已掌握</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold text-warning">{reviewCount}</div>
-          <div className="text-xs text-slate-400">需复习 🔄</div>
+          <div className="text-3xl font-bold text-amber-500">{reviewCount}</div>
+          <div className="text-sm text-slate-500 font-medium mt-0.5">需复习</div>
         </div>
       </div>
 
