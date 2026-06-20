@@ -182,12 +182,15 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
   }, [questions, answers])
 
   const handleNext = useCallback(() => {
-    if (currentIndex >= questions.length - 1 && allAnswered) {
-      const totalTime = Math.round((Date.now() - startTime) / 1000)
-      onFinish?.({ answers: [...answers], totalTime })
-    } else {
-      // Always go to next in order; loop back to 0 if at the end
-      const nextIndex = currentIndex + 1 >= questions.length ? 0 : currentIndex + 1
+    if (currentIndex >= questions.length - 1) {
+      if (allAnswered) {
+        const totalTime = Math.round((Date.now() - startTime) / 1000)
+        onFinish?.({ answers: [...answers], totalTime })
+      }
+      return // at last question but not all answered: do nothing (hint shown in UI)
+    }
+    {
+      const nextIndex = currentIndex + 1
       const target = questions[nextIndex]
       setCurrentIndex(nextIndex)
       if (target?.type === 'reading-group') {
@@ -283,6 +286,11 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     )
                   })()}
 
+                  {currentIndex >= questions.length - 1 && !allAnswered && (
+                    <p className="text-center text-sm text-amber-600 font-medium px-2">
+                      ⚠️ 前面还有未答的题目，点击右上角 <span className="font-bold bg-amber-100 px-1.5 py-0.5 rounded">☰</span> 跳转作答
+                    </p>
+                  )}
                   <button
                     onClick={handleNext}
                     className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
@@ -345,6 +353,11 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                     </div>
                   )}
 
+                  {currentIndex >= questions.length - 1 && !allAnswered && (
+                    <p className="text-center text-sm text-amber-600 font-medium px-2">
+                      ⚠️ 前面还有未答的题目，点击右上角 <span className="font-bold bg-amber-100 px-1.5 py-0.5 rounded">☰</span> 跳转作答
+                    </p>
+                  )}
                   <button
                     onClick={handleNext}
                     className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
