@@ -125,8 +125,29 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
   const [showNav, setShowNav] = useState(false)
 
   const question = questions[currentIndex]
-  const isLast = currentIndex >= questions.length - 1
   const isGroup = question?.type === 'reading-group'
+
+  /** 判断某题是否已作答 */
+  const isQuestionAnswered = useCallback((q) => {
+    if (q.type === 'reading-group') {
+      const subIds = q.subQuestions.map(sq => sq.id)
+      return answers.filter(a => subIds.includes(a.questionId)).length === q.subQuestions.length
+    }
+    return answers.some(a => a.questionId === q.id)
+  }, [answers])
+
+  const allAnswered = questions.every(q => isQuestionAnswered(q))
+
+  /** 找到下一个未答题目（从 fromIndex+1 往后找，找不到再从开头循环找） */
+  const findNextUnanswered = useCallback((fromIndex) => {
+    for (let i = fromIndex + 1; i < questions.length; i++) {
+      if (!isQuestionAnswered(questions[i])) return i
+    }
+    for (let i = 0; i < fromIndex; i++) {
+      if (!isQuestionAnswered(questions[i])) return i
+    }
+    return -1
+  }, [questions, isQuestionAnswered])
 
   const handleAnswer = useCallback((selected, isCorrect) => {
     const timeTaken = Math.round((Date.now() - startTime) / 1000)
@@ -173,13 +194,14 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
 
   const handleNext = useCallback(() => {
     setLastAnswer(null)
-    if (isLast) {
+    if (allAnswered) {
       const totalTime = Math.round((Date.now() - startTime) / 1000)
       onFinish?.({ answers: [...answers], totalTime })
     } else {
-      setCurrentIndex(prev => prev + 1)
+      const next = findNextUnanswered(currentIndex)
+      if (next >= 0) jumpToQuestion(next)
     }
-  }, [isLast, answers, startTime, onFinish])
+  }, [allAnswered, answers, startTime, onFinish, currentIndex, findNextUnanswered, jumpToQuestion])
 
   if (!question) {
     return <div className="text-center py-12 text-slate-400 text-base">没有题目</div>
@@ -266,9 +288,9 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                   <button
                     onClick={handleNext}
                     className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                      ${isLast ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                      ${allAnswered ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
                   >
-                    {isLast ? '📊 查看结果' : '下一题 →'}
+                    {allAnswered ? '📊 查看结果' : '下一题 →'}
                   </button>
                 </motion.div>
               )}
@@ -328,9 +350,9 @@ export default function QuizRunner({ questions, onFinish, onAnswer }) {
                   <button
                     onClick={handleNext}
                     className={`w-full py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 active:scale-95
-                      ${isLast ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
+                      ${allAnswered ? 'bg-success text-white shadow-sm hover:bg-emerald-600 hover:shadow-md' : 'bg-brand text-white shadow-sm hover:bg-brand-dark hover:shadow-md'}`}
                   >
-                    {isLast ? '📊 查看结果' : '下一题 →'}
+                    {allAnswered ? '📊 查看结果' : '下一题 →'}
                   </button>
                 </motion.div>
               )}
