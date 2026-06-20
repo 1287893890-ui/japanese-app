@@ -87,7 +87,7 @@ export default function QuizHomePage() {
       title: '词汇专项',
       icon: '📖',
       description: '专注词汇读音与含义',
-      count: questions.filter(q => q.topic === 'reading' || q.topic === 'meaning').length,
+      count: questions.filter(q => ['reading', 'meaning', 'vocabulary', 'listening'].includes(q.topic)).length,
     },
     {
       id: 'grammar',
