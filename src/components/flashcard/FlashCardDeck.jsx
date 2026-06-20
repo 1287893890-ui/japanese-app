@@ -8,9 +8,11 @@ export default function FlashCardDeck({ words, onComplete, onWordResult }) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [results, setResults] = useState([])
   const [isComplete, setIsComplete] = useState(false)
+  const [filteredWords, setFilteredWords] = useState(null)
 
-  const currentWord = words[currentIndex]
-  const progress = { current: currentIndex + 1, total: words.length }
+  const activeWords = filteredWords || words
+  const currentWord = activeWords[currentIndex]
+  const progress = { current: currentIndex + 1, total: activeWords.length }
 
   const handleResult = useCallback((wordId, status) => {
     const result = { wordId, status }
@@ -22,9 +24,12 @@ export default function FlashCardDeck({ words, onComplete, onWordResult }) {
     } else {
       setTimeout(() => setCurrentIndex(prev => prev + 1), 200)
     }
-  }, [currentIndex, words.length, onWordResult])
+  }, [currentIndex, activeWords.length, onWordResult])
 
-  const handleRestart = () => {
+  const handleRestart = (reviewWordIds) => {
+    if (reviewWordIds && reviewWordIds.length > 0) {
+      setFilteredWords(activeWords.filter(w => reviewWordIds.includes(w.id)))
+    }
     setCurrentIndex(0)
     setResults([])
     setIsComplete(false)

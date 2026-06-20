@@ -38,7 +38,7 @@ export default function DeckComplete({ results, total, onRestart, onFinish }) {
           🎯 完成学习
         </Button>
         {reviewCount > 0 && (
-          <Button variant="secondary" size="lg" className="w-full" onClick={onRestart}>
+          <Button variant="secondary" size="lg" className="w-full" onClick={() => onRestart(results.filter(r => r.status === 'review').map(r => r.wordId))}>
             🔄 复习薄弱词（{reviewCount}个）
           </Button>
         )}
