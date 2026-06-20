@@ -19,7 +19,7 @@ import ExamResultPage from './pages/ExamResultPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? '/japanese-app' : '/'}>
       <AppProvider>
         <QuizProvider>
           <Routes>
