@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useSearchParams } from 'react-router-dom'
 import { getVocabulary, getGrammar, getDialogues } from '../data'
 import { useApp } from '../context/AppContext'
 import { LEVEL_CONFIG, getLevelColor } from '../utils/levels'
@@ -15,7 +14,12 @@ const TABS = [
 export default function LevelDetailPage() {
   const { level } = useParams()
   const { state } = useApp()
-  const [activeTab, setActiveTab] = useState('vocab')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const activeTab = searchParams.get('tab') || 'vocab'
+
+  const handleTabChange = (tab) => {
+    setSearchParams({ tab }, { replace: true })
+  }
 
   const config = LEVEL_CONFIG[level] || { emoji: '📚', nameCn: '', color: '#6366F1' }
   const color = getLevelColor(level)
@@ -63,7 +67,7 @@ export default function LevelDetailPage() {
           {TABS.map(tab => (
             <button
               key={tab.key}
-              onClick={() => setActiveTab(tab.key)}
+              onClick={() => handleTabChange(tab.key)}
               className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-sm font-medium transition-all duration-200
                 ${activeTab === tab.key ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-400 hover:text-slate-600'}`}
             >
